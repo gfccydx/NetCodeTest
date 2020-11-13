@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "layui - demo";
+}
+<div class="layui-body" id="LAY_app_body">
+    <div class="layadmin-tabsbody-item layui-show">
+        <iframe src="https://www.layui.com/admin/std/dist/views/home/console.html" frameborder="0" class="layadmin-iframe"></iframe>
+    </div>
+</div>
+@section bodyEnd{
+    <script src="~/Content/layui/layui.js"></script>
+    <script>
+        layui.config({
+            base: '../Content/' //静态资源所在路径
+        }).extend({
+            index: 'lib/index' //主入口模块
+        }).use('index');
+    </script>
+}
