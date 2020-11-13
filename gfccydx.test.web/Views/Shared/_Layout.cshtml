@@ -462,27 +462,14 @@
             <div class="layadmin-body-shade" layadmin-event="shade"></div>
         </div>
     </div>
-
-    <script src="../layuiadmin/layui/layui.js"></script>
+    <script src="~/Content/layui/layui.js"></script>
     <script>
         layui.config({
-            base: '../layuiadmin/' //静态资源所在路径
+            base: '../Content/' //静态资源所在路径
         }).extend({
             index: 'lib/index' //主入口模块
         }).use('index');
     </script>
-
-    <!-- 百度统计 -->
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?d214947968792b839fd669a4decaaffc";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-
     @RenderSection("bodyEnd", false)
 </body>
 </html>

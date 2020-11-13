@@ -200,6 +200,16 @@
     <Content Include="Content\layui\lay\modules\util.js" />
     <Content Include="Content\lib\view.js" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\tpl\system\about.html" />
+    <Content Include="Content\tpl\template\tips\404.html" />
+    <Content Include="Content\tpl\template\tips\404_files\168_1559291577683_9348.png" />
+    <Content Include="Content\tpl\template\tips\404_files\code.css" />
+    <Content Include="Content\tpl\template\tips\404_files\f.txt" />
+    <Content Include="Content\tpl\template\tips\404_files\global.css" />
+    <Content Include="Content\tpl\template\tips\404_files\layer.css" />
+    <Content Include="Content\tpl\template\tips\404_files\layui.css" />
+    <Content Include="Content\tpl\template\tips\404_files\logo.png" />
+    <Content Include="Content\tpl\template\tips\404_files\upyun.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -217,6 +227,8 @@
     <Content Include="Content\layui\font\iconfont.ttf" />
     <Content Include="Content\layui\font\iconfont.woff" />
     <Content Include="Content\layui\font\iconfont.woff2" />
+    <Content Include="Content\tpl\template\tips\404_files\hm.js.下载" />
+    <Content Include="Content\tpl\template\tips\404_files\layui.js.下载" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
