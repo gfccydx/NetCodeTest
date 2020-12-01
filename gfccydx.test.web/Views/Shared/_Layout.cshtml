@@ -23,7 +23,7 @@
                         </a>
                     </li>
                     <li class="layui-nav-item layui-hide-xs" lay-unselect>
-                        <a href="http://www.layui.com/admin/" target="_blank" title="前台">
+                        <a href="https://www.layui.com/admin/std/dist/views/home/console.html" target="_blank" title="前台">
                             <i class="layui-icon layui-icon-website"></i>
                         </a>
                     </li>
@@ -85,7 +85,7 @@
             <!-- 侧边菜单 -->
             <div class="layui-side layui-side-menu">
                 <div class="layui-side-scroll">
-                    <div class="layui-logo" lay-href="home/console.html">
+                    <div class="layui-logo" lay-href="https://www.layui.com/admin/std/dist/views/home/console.html">
                         <span>layuiAdmin</span>
                     </div>
 
@@ -97,13 +97,13 @@
                             </a>
                             <dl class="layui-nav-child">
                                 <dd data-name="console" class="layui-this">
-                                    <a lay-href="home/console.html">控制台</a>
+                                    <a lay-href="https://www.layui.com/admin/std/dist/views/home/console.html">控制台</a>
                                 </dd>
                                 <dd data-name="console">
-                                    <a lay-href="home/homepage1.html">主页一</a>
+                                    <a lay-href="https://www.layui.com/admin/std/dist/views/home/homepage1.html">主页一</a>
                                 </dd>
                                 <dd data-name="console">
-                                    <a lay-href="home/homepage2.html">主页二</a>
+                                    <a lay-href="https://www.layui.com/admin/std/dist/views/home/homepage2.html">主页二</a>
                                 </dd>
                             </dl>
                         </li>
@@ -452,24 +452,28 @@
                 </div>
                 <div class="layui-tab" lay-unauto lay-allowClose="true" lay-filter="layadmin-layout-tabs">
                     <ul class="layui-tab-title" id="LAY_app_tabsheader">
-                        <li lay-id="home/console.html" lay-attr="home/console.html" class="layui-this"><i class="layui-icon layui-icon-home"></i></li>
+                        <li lay-id="https://www.layui.com/admin/std/dist/views/home/console.html" lay-attr="home/console.html" class="layui-this"><i class="layui-icon layui-icon-home"></i></li>
                     </ul>
                 </div>
             </div>
             <!-- 主体内容 -->
-            @RenderBody()
+            <div class="layui-body" id="LAY_app_body">
+                <div class="layadmin-tabsbody-item layui-show">
+                    @RenderBody()
+                </div>
+            </div>
             <!-- 辅助元素，一般用于移动设备下遮罩 -->
             <div class="layadmin-body-shade" layadmin-event="shade"></div>
         </div>
-    </div>
-    <script src="~/Content/layui/layui.js"></script>
-    <script>
-        layui.config({
-            base: '../Content/' //静态资源所在路径
-        }).extend({
-            index: 'lib/index' //主入口模块
-        }).use('index');
-    </script>
-    @RenderSection("bodyEnd", false)
+            </div>
+            <script src="~/Content/layui/layui.js"></script>
+            <script>
+                layui.config({
+                    base: '../Content/' //静态资源所在路径
+                }).extend({
+                    index: 'lib/index' //主入口模块
+                }).use('index');
+            </script>
+            @RenderSection("bodyEnd", false)
 </body>
 </html>
